@@ -1,0 +1,40 @@
+{
+  "name": "nodejs-boilerplate",
+  "version": "0.0.1",
+  "description": "nodejs starting boilerplate",
+  "keywords": [
+    "nodejs",
+    "boilerplate"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "babel-node": "babel-node",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build",
+    "eslint": "eslint"
+  },
+  "bin": {
+    "hello": "dist/bin/hello.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "Dmitry Kabanov",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimaKabanov/nodejs-boilerplate"
+  },
+  "homepage": "https://github.com/DimaKabanov/nodejs-boilerplate#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-import": "^2.11.0"
+  }
+}
