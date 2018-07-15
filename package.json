@@ -50,5 +50,8 @@
     "flow-typed": "^2.4.0",
     "jest": "^22.4.3",
     "jest-cli": "^22.4.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10"
   }
 }
